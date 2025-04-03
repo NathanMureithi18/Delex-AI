@@ -1,0 +1,21 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore build output
+target/
+
+# Ignore environment variables file
+.env
+
+# Ignore IDE/editor-specific files
+.devcontainer/
+
+# Ignore dependency and lock files (optional, decide based on project needs)
+package-lock.json
+Cargo.lock
+
+# Ignore Rust's Cargo-related files
+.cargo/
+
+# Ignore system files
+.DS_Store
