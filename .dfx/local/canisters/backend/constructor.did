@@ -1,0 +1,9 @@
+type ChatMessage = record { content : text; role : text };
+service : () -> {
+  chat : (vec ChatMessage) -> (text);
+  constitution_chat : (vec ChatMessage) -> (text);
+  constitution_prompt : (text) -> (text);
+  get_all_constitution_chunks : () -> (vec text) query;
+  prompt : (text) -> (text);
+  search_constitution : (text) -> (vec text) query;
+}
